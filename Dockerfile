@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 
 RUN apt-get update  -y
 RUN apt-get install -y php5-fpm php5-odbc php5-dev php5-mcrypt php5-mysql php5-sybase libmysqlclient-dev freetds-dev php5-odbc php5-curl
