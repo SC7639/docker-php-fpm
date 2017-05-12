@@ -2,7 +2,8 @@ FROM ubuntu:16.04
 
 # Install all the necessary packages for php 7.0
 RUN apt-get update  -y
-RUN apt-get install -y php7.0-fpm php7.0-odbc php7.0-dev php7.0-mcrypt php7.0-mysql php7.0-sybase libmysqlclient-dev freetds-dev php7.0-odbc php7.0-curl php7.0-pdo-firebird
+RUN apt-get install -y php7.0-fpm php7.0-odbc php7.0-dev php7.0-mcrypt php7.0-mysql php7.0-sybase libmysqlclient-dev\
+    freetds-dev php7.0-odbc php7.0-curl php7.0-pdo-firebird php7.0 php7.0-xml
 
 RUN phpenmod pdo_mysql pdo_dblib mcrypt odbc pdo_odbc mysql curl
 
